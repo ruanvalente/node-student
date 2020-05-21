@@ -1,10 +1,10 @@
 # A simple repository of studies for node
 
-This repository consists of concentrating study applications using Node, and NoSQL database using MongoDB.
+Este repositório consiste em concentrar aplicações de estudos usando Node, e banco de dados NoSQL usando MongoDB.
 
-## To-do list:
+## Lista de tarefas:
 
-[] - A simple API - In Progress
+[] - Uma simples API - Em progresso
 
 - Implementar o cadastro
 - Implementar a listagem
