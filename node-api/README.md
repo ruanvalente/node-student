@@ -1,1 +1,1 @@
-# A simple repository of studies for node
+# A simple API of studies for node
