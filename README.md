@@ -2,12 +2,12 @@
 
 Este repositório consiste em concentrar aplicações de estudos usando Node, e banco de dados NoSQL usando MongoDB.
 
-## Lista de tarefas:
+## Lista de tarefas
 
-[] - Uma simples API - Em progresso
+## Tarefas básicas:
 
-- Implementar o cadastro
-- Implementar a listagem
-- Implementar a remoção
-- Implementar a remoção
-- Status code
+- [x] Implementar o cadastro
+- [x] Implementar a listagem
+- [ ] Implementar a atualização
+- [ ] Implementar a remoção
+- [x] Status code
