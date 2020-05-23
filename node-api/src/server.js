@@ -12,6 +12,8 @@ server.listen(PORT, (err) => {
     mongoose.connect(`${process.env.DATABASE}/${process.env.DATABASE_NAME}`, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
+      useCreateIndex: true,
+      useFindAndModify: true
     })
     require('./model/User')
     console.log(`Server is runing on http://localhost:${PORT}/api`)
