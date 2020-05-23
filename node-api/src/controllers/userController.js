@@ -20,4 +20,8 @@ module.exports = {
     const user = await User.findByIdAndUpdate(req.params.id, req.body, { new: true })
     return res.json(user)
   },
+  async destroy(req, res) {
+    await User.findByIdAndDelete(req.params.id, req.body)
+    return res.json({ message: 'User is remove'})
+  }
 }

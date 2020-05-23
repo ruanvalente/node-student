@@ -13,7 +13,7 @@ server.listen(PORT, (err) => {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
-      useFindAndModify: true
+      useFindAndModify: false
     })
     require('./model/User')
     console.log(`Server is runing on http://localhost:${PORT}/api`)
