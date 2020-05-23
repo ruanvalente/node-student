@@ -11,3 +11,10 @@ Este repositório consiste em concentrar aplicações de estudos usando Node, e 
 - [x] Implementar a atualização
 - [x] Implementar a remoção
 - [x] Status code
+
+## Tarefas intermediarias:
+
+- [ ] Implementar validações
+- [ ] Implementar paginação
+- [ ] Implementar TDD
+- [ ] Melhorar possíveis partes do código
