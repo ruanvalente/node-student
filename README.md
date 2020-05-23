@@ -8,6 +8,6 @@ Este repositório consiste em concentrar aplicações de estudos usando Node, e 
 
 - [x] Implementar o cadastro
 - [x] Implementar a listagem
-- [ ] Implementar a atualização
-- [ ] Implementar a remoção
+- [x] Implementar a atualização
+- [x] Implementar a remoção
 - [x] Status code
