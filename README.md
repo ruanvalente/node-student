@@ -15,6 +15,6 @@ Este repositório consiste em concentrar aplicações de estudos usando Node, e 
 ## Tarefas intermediarias:
 
 - [ ] Implementar validações
-- [ ] Implementar paginação
+- [x] Implementar paginação
 - [ ] Implementar TDD
 - [ ] Melhorar possíveis partes do código
