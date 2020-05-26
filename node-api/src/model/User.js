@@ -1,6 +1,7 @@
 'use strict'
 
 const mongoose = require('mongoose')
+const mongoosePaginate = require('mongoose-paginate')
 mongoose.Promise = global.Promise
 
 const UserSchema = new mongoose.Schema({
@@ -24,4 +25,5 @@ const UserSchema = new mongoose.Schema({
   },
 })
 
+UserSchema.plugin(mongoosePaginate)
 module.exports = mongoose.model('User', UserSchema)

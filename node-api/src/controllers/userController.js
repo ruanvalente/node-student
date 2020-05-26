@@ -6,8 +6,9 @@ const User = mongoose.model('User')
 module.exports = {
   async index(req, res) {
     try {
-      const user = await User.find({})
-      if(user.length === 0) {
+      const { page } = req.query
+      const user = await User.paginate({}, { page, limit: 10 })
+      if (user.length === 0) {
         return res.status(200).json({ message: 'Nenhum usuário criado' })
       }
       return res.json(user)
@@ -28,12 +29,14 @@ module.exports = {
       const user = await User.findById(req.params.id)
       return res.status(200).json(user)
     } catch (e) {
-      return res.status(404).json( {message: 'Usuário não encontrado'} )
+      return res.status(404).json({ message: 'Usuário não encontrado' })
     }
   },
   async update(req, res) {
     try {
-      const user = await User.findByIdAndUpdate(req.params.id, req.body, { new: true })
+      const user = await User.findByIdAndUpdate(req.params.id, req.body, {
+        new: true,
+      })
       return res.status(200).json(user)
     } catch (e) {
       return res.status(500).json({ message: 'Falha ao atualizar o registro' })
@@ -42,9 +45,9 @@ module.exports = {
   async destroy(req, res) {
     try {
       await User.findByIdAndDelete(req.params.id, req.body)
-      return res.status(200).json({ message: 'Usuário removido'})
+      return res.status(200).json({ message: 'Usuário removido' })
     } catch (e) {
       return res.status(500).json({ message: 'Falha ao ao remover usuário' })
     }
-  }
+  },
 }
