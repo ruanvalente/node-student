@@ -6,7 +6,7 @@ const User = mongoose.model('User')
 module.exports = {
   async index(req, res) {
     try {
-      const { page } = req.query
+      const { page = 1 } = req.query
       const user = await User.paginate({}, { page, limit: 10 })
       if (user.length === 0) {
         return res.status(200).json({ message: 'Nenhum usuário criado' })
