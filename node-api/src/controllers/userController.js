@@ -18,6 +18,10 @@ module.exports = {
   },
   async create(req, res) {
     try {
+      const { email } = req.body
+      if (await User.findOne({ email })) {
+        return res.status(400).json({ message: 'Usuário já cadastrado' })
+      }
       const user = await User.create(req.body)
       return res.status(201).json(user)
     } catch (e) {
