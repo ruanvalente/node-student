@@ -1,4 +1,3 @@
-;('use strict')
 require('dotenv').config({ path: '.env' })
 require('./model/User')
 const server = require('./app')
@@ -13,7 +12,7 @@ server.listen(PORT, (err) => {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
-      useFindAndModify: false,
+      useFindAndModify: false
     })
     require('./model/User')
     console.log(`Server is runing on http://localhost:${PORT}/api/users`)
