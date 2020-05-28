@@ -11,6 +11,7 @@ Este repositório consiste em concentrar aplicações de estudos usando Node, e 
 - [x] Implementar a atualização
 - [x] Implementar a remoção
 - [x] Status code
+- [x] Linter
 
 ## Tarefas intermediarias:
 
